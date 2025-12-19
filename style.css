@@ -1,0 +1,25 @@
+ .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #525560;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+
+.donate-btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Mobile spacing fix */
+@media (max-width: 991px) {
+  .donate-btn {
+    margin-top: 10px;
+  }
+}
