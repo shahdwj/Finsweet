@@ -1,3 +1,6 @@
+ body {
+  font-family:'Roboto';
+}
  .navbar-brand {
   font-size: 1.5rem;
 }
@@ -78,3 +81,63 @@
     text-align: center;
   }
 }
+/** start KNOW ABOUT US**/
+
+.about-section {
+  padding-top: 96px;
+   padding-bottom: 64px;
+}
+
+/* Label */
+.section-label {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 32px;
+  position: relative;
+   
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+/* Text */
+.section-text {
+  color: #525560;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.learn{
+  margin-top:48px;
+  color: #ffffff;
+  background-color: #70C174;
+  
+}
+/* Image */
+.image-wrapper {
+  position: relative;
+  border-radius: 18px;
+ 
+}
+
+/* Play Button */
+.play-btn {
+  position: absolute;
+  top: 46%;
+  left: 44%;
+  border-radius: 50%;
+  }
+/* Responsive */
+@media (max-width: 986px) {
+  .section-title {
+    font-size: 30px;
+  }
+  
+}
+/*end KNOW ABOUT US*/
