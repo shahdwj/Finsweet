@@ -304,6 +304,9 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[calc\(100-67px\)\] {
+    height: calc(100 - 67px);
+  }
   .h-\[calc\(100hv-67px\)\] {
     height: calc(100hv - 67px);
   }
@@ -315,6 +318,9 @@
   }
   .h-\[calc\(100hv-px\)\] {
     height: calc(100hv - px);
+  }
+  .h-\[calc\(100vh-67px\)\] {
+    height: calc(100vh - 67px);
   }
   .h-\[px\] {
     height: px;
