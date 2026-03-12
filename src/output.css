@@ -397,6 +397,9 @@
       background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
   }
+  .bg-\[url\(\'\.\/assets\/homebageicon\/BG\.svg\'\)\] {
+    background-image: url('./assets/homebageicon/BG.svg');
+  }
   .bg-cover {
     background-size: cover;
   }
