@@ -9,13 +9,10 @@
       "Courier New", monospace;
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-900: oklch(39.3% 0.095 152.535);
-    --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
-    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
@@ -41,7 +38,6 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-medium: 500;
-    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-wide: 0.025em;
     --tracking-widest: 0.1em;
@@ -62,6 +58,7 @@
     --color-header-text: #0B0706;
     --color-secondary-text: #525560;
     --color-primary-black: #1D2130;
+    --color-green-tertiary: #EFF7F2;
   }
 }
 @layer base {
@@ -225,6 +222,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .start {
+    inset-inline-start: var(--spacing);
+  }
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
@@ -258,9 +258,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-0 {
-    margin-top: calc(var(--spacing) * 0);
-  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -276,38 +273,14 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
-  .mt-\[1px\] {
-    margin-top: 1px;
-  }
   .mt-\[2px\] {
     margin-top: 2px;
   }
   .mt-\[16px\] {
     margin-top: 16px;
   }
-  .mt-\[20px\] {
-    margin-top: 20px;
-  }
-  .mt-\[30px\] {
-    margin-top: 30px;
-  }
-  .mt-\[40px\] {
-    margin-top: 40px;
-  }
-  .mt-\[45px\] {
-    margin-top: 45px;
-  }
-  .mt-\[50px\] {
-    margin-top: 50px;
-  }
-  .mt-\[55px\] {
-    margin-top: 55px;
-  }
   .mt-\[64px\] {
     margin-top: 64px;
-  }
-  .mt-\[px\] {
-    margin-top: px;
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -531,6 +504,9 @@
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
+  .bg-green-tertiary {
+    background-color: var(--color-green-tertiary);
+  }
   .bg-green1 {
     background-color: var(--color-green1);
   }
@@ -647,14 +623,14 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
   .text-\[16px\] {
     font-size: 16px;
   }
   .text-\[18px\] {
     font-size: 18px;
-  }
-  .text-\[19px\] {
-    font-size: 19px;
   }
   .text-\[20px\] {
     font-size: 20px;
@@ -664,6 +640,9 @@
   }
   .text-\[40px\] {
     font-size: 40px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
   }
   .leading-\[80px\] {
     --tw-leading: 80px;
@@ -696,9 +675,6 @@
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
-  }
-  .text-\[px\] {
-    color: px;
   }
   .text-black {
     color: var(--color-black);
@@ -817,19 +793,9 @@
       margin-top: calc(var(--spacing) * 2);
     }
   }
-  .sm\:mt-16 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 16);
-    }
-  }
   .sm\:mt-\[16px\] {
     @media (width >= 40rem) {
       margin-top: 16px;
-    }
-  }
-  .sm\:mt-\[64px\] {
-    @media (width >= 40rem) {
-      margin-top: 64px;
     }
   }
   .sm\:h-12 {
@@ -912,11 +878,6 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
-  .sm\:text-\[20px\] {
-    @media (width >= 40rem) {
-      font-size: 20px;
-    }
-  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -946,6 +907,11 @@
   .md\:text-\[18px\] {
     @media (width >= 48rem) {
       font-size: 18px;
+    }
+  }
+  .md\:text-\[48px\] {
+    @media (width >= 48rem) {
+      font-size: 48px;
     }
   }
   .lg\:mt-0 {
@@ -1026,11 +992,6 @@
   .lg\:px-20 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:py-4 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 4);
     }
   }
   .lg\:py-24 {
