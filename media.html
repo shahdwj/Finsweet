@@ -1,299 +1,322 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Media</title>
-  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./src/output.css" />
 </head>
 
 <body class="bg-green-tertiary">
-  <header class="h-[67px] mb-4 lg:mb-[20px] bg-green-tertiary">
-    <div class="container  w-full px-8 py-6 flex items-center justify-between  ">
 
-
-      <div class="text-xl font-bold text-black  ">
+  <!-- Header -->
+  <header class="bg-green-tertiary">
+    <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-6 flex items-center justify-between">
+      <div class="text-xl font-bold text-black">
         {Finsweet
       </div>
 
-      <div class="flex items-center gap-10">
-        <a href="index.html"
-          class="text-base font-medium text-header-text   hover:text-gray-600  transition-colors hidden md:block">Home</a>
-        <a href="aboutUs.html"
-          class="text-base font-medium  text-gray-500  hover:text-gray-900 transition-colors hidden md:block">About
-          us</a>
-        <a href="whatWeDo.html"
-          class="text-base font-medium  text-gray-500  hover:text-gray-900 transition-colors hidden md:block">What We
-          Do</a>
-        <a href="media.html"
-          class="text-base font-medium  text-gray-500  hover:text-gray-900 transition-colors hidden md:block">Media</a>
-        <a href="contact.html"
-          class="text-base font-medium  text-gray-500  hover:text-gray-900 transition-colors hidden md:block">Contact</a>
-        <a href="Donate.html"
-          class="bg-gray-900 text-white text-sm font-medium px-5 py-2 rounded hover:bg-gray-700 transition-colors hidden md:block">
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="text-base font-medium text-header-text hover:text-gray-600 transition-colors">Home</a>
+        <a href="aboutUs.html" class="text-base font-medium text-gray-500 hover:text-gray-900 transition-colors">About us</a>
+        <a href="whatWeDo.html" class="text-base font-medium text-gray-500 hover:text-gray-900 transition-colors">What We Do</a>
+        <a href="media.html" class="text-base font-medium text-gray-900 hover:text-gray-700 transition-colors">Media</a>
+        <a href="contact.html" class="text-base font-medium text-gray-500 hover:text-gray-900 transition-colors">Contact</a>
+        <a
+          href="Donate.html"
+          class="bg-gray-900 text-white text-sm font-medium px-8 py-3 rounded hover:bg-gray-700 transition-colors"
+        >
           Donate
         </a>
-      </div>
+      </nav>
+
       <div class="block md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="size-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </div>
-
     </div>
   </header>
- 
-  <section class="bg-green-tertiary pb-6 md:pb-0" >
-    <div class=" max-w-[1500px]   mx-auto px-6 lg:px-28">
-      <div class="flex flex-col lg:flex-row gap-2 lg:gap-24 items-center">
-        <div class="   flex-1 mt-4 md:mt-24 ">
-          <p class="text-[16px]  font-family  tracking-widest uppercase mb-8 text-primary-black">
-            Top news
+
+  <!-- Hero / Top News -->
+  <section class="bg-green-tertiary py-12 lg:py-20">
+    <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 lg:gap-24">
+
+        <!-- Left -->
+         <div class="flex-1 relative px-6 lg:px-15   ">
+        
+        <!-- small title -->
+        
+          <div class=" hidden lg:block w-14 h-[1.5px] bg-primary-black absolute top-2 -left-2"></div>
+          <div class="flex items-center"> 
+          <p class=" font-family font-bold  text-sm lg:text-[16px] tracking-widest text-primary-black uppercase mb-6">
+           Top news
+          </p>
+        </div>
+
+          <h1 class="text-[40px]   md:text-5xl   font-family font-bold  text-primary-black mb-6">
+            Our goal is to make water available for everyone
+          </h1>
+
+          <p class="text-secondary-text text-[16px] leading-7 max-w-[540px] mb-8">
+            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
           </p>
 
-          <h2 class="text-4xl md:text-5xl lg:text-[52px] font-family font-bold text-primary-black leading-tight mb-4">
-            Our goal is to make<br>
-             water available for
-              everyone
-          </h2>
-
-          <p class="text-secondary-text text-[16px] mb-8 leading-relaxed  ">
-            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc<br> ut sem vitae risus tristique
-            posuere.
-          </p>
-          <button
-            class="bg-green1 hover:bg-green-600 text-white px-8 py-4 rounded-sm transition active:scale-95  mb-10 md:mb-67">
+          <button class="bg-green1 hover:bg-green-600 text-white px-8 py-4 rounded-md transition active:scale-95">
             Read more
           </button>
         </div>
-        <div  class=" flex-1">
-          <div class="bg-white flex flex-col gap-6 p-6 rounded-xl shadow-sm ">
-            <!--1-->
-            <div class="flex flex-col sm:flex-row gap-6">
-              <img  src="./assets/mediaPage/media1.webp" class="w-[192px] h-[160px] object-cover rounded-lg">
-              <div class="flex flex-col">
-                <h2 class="text-[20px] font-family font-bold  text-primary-black">Don’t destroy greenery and don’t spoil scenery.</h2>
-                <p class="text-[16px ] text-secondary-text mt-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-              </div>
-            </div>
-            <!--2-->
-            <div class="flex flex-col  sm:flex-row gap-6">
-              <img src="./assets/mediaPage/media2.webp" class="w-[192px] h-[160px] object-cover rounded-lg">
-              <div class="flex flex-col">
-                <h2 class="text-[20px] font-family font-bold  text-primary-black"> Why saving wildlife is extremely important</h2>
-                <p class="text-[16px ] text-secondary-text mt-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-              </div>
-            </div>
-            <!--3-->
-            <div class="flex  flex-col  sm:flex-row gap-6">
-              <img src="./assets/mediaPage/media3.webp" class="w-[192px] h-[160px] object-cover rounded-lg">
-              <div class="flex flex-col">
-                <h2 class="text-[20px] font-family font-bold  text-primary-black"> Caring for the present is caring for the future</h2>
-                <p class="text-[16px ] text-secondary-text mt-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
+
+        <!-- Right -->
+        <div class="flex-1 w-full max-w-[590px]">
+          <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm space-y-6">
+
+            <!-- Card 1 -->
+            <div class="flex flex-col sm:flex-row gap-5">
+              <img
+                src="./assets/mediaPage/media1.webp"
+                alt="media 1"
+                class="w-full sm:w-[192px] h-[160px] object-cover rounded-lg shrink-0"
+              />
+              <div class="flex flex-col justify-center">
+                <h2 class="text-[22px] leading-[1.4] font-family font-bold text-primary-black">
+                  Don’t destroy greenery and don’t spoil scenery.
+                </h2>
+                <p class="text-[16px] leading-7 text-secondary-text mt-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                </p>
               </div>
             </div>
 
+            <!-- Card 2 -->
+            <div class="flex flex-col sm:flex-row gap-5">
+              <img
+                src="./assets/mediaPage/media2.webp"
+                alt="media 2"
+                class="w-full sm:w-[192px] h-[160px] object-cover rounded-lg shrink-0"
+              />
+              <div class="flex flex-col justify-center">
+                <h2 class="text-[22px] leading-[1.4] font-family font-bold text-primary-black">
+                  Why saving wildlife is extremely important
+                </h2>
+                <p class="text-[16px] leading-7 text-secondary-text mt-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                </p>
+              </div>
+            </div>
 
+            <!-- Card 3 -->
+            <div class="flex flex-col sm:flex-row gap-5">
+              <img
+                src="./assets/mediaPage/media3.webp"
+                alt="media 3"
+                class="w-full sm:w-[192px] h-[160px] object-cover rounded-lg shrink-0"
+              />
+              <div class="flex flex-col justify-center">
+                <h2 class="text-[22px] leading-[1.4] font-family font-bold text-primary-black">
+                  Caring for the present is caring for the future
+                </h2>
+                <p class="text-[16px] leading-7 text-secondary-text mt-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                </p>
+              </div>
+            </div>
 
           </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Read News -->
+  <section class="py-20 lg:py-24 bg-white">
+    <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+
+      <div class="text-center mb-14">
+        <h2 class="font-family text-[36px] md:text-[48px] font-bold text-primary-black mb-5">
+          Read our Recent News
+        </h2>
+        <p class="text-[15px] md:text-[18px] leading-7 text-secondary-text max-w-[700px] mx-auto">
+          Edit this text to make it your own. To edit, simply click directly on the text to start. We are served.
+        </p>
+      </div>
+
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col">
+          <img src="./assets/homebageicon/readandNews/1.webp" alt="news 1" class="rounded-lg w-full object-cover">
+          <p class="mt-4 text-primary-black text-[20px] font-family font-bold mb-2">
+            Don’t destroy greenery and don’t spoil scenery
+          </p>
+          <p class="text-secondary-text text-[16px] leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+          </p>
+        </div>
+
+        <div class="flex flex-col">
+          <img src="./assets/homebageicon/readandNews/2.webp" alt="news 2" class="rounded-lg w-full object-cover">
+          <p class="mt-4 text-primary-black text-[20px] font-family font-bold mb-2">
+            Is climate change happening faster than expected?
+          </p>
+          <p class="text-secondary-text text-[16px] leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+          </p>
+        </div>
+
+        <div class="flex flex-col">
+          <img src="./assets/homebageicon/readandNews/3.webp" alt="news 3" class="rounded-lg w-full object-cover">
+          <p class="mt-4 text-primary-black text-[20px] font-family font-bold mb-2">
+            Top 10 facts about wind farms you didn't know
+          </p>
+          <p class="text-secondary-text text-[16px] leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+          </p>
+        </div>
+
+        <div class="flex flex-col">
+          <img src="./assets/homebageicon/readandNews/4.webp" alt="news 4" class="rounded-lg w-full object-cover">
+          <p class="mt-4 text-primary-black text-[20px] font-family font-bold mb-2">
+            Our goal is to make water available for everyone
+          </p>
+          <p class="text-secondary-text text-[16px] leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Read news-->
-  <section class="py-24 bg-white">
-    <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
-      <!--title-->
-      <div class=" text-center justify-content-center items-center gap-6 mb-12">
-        <p class=" font-family   text-[40px] md:text-[48px] font-bold mb-6 text-primary-black ">
-          Read our Recent News
-        </p>
-        <p class="mt-[16px]  text-[14px] md:text-[18px] text-secondary-text">Edit this text to make it your own. To
-          edit, simply click directly<br> on the text to start We are served</p>
+  <!-- Our Events -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
 
+      <div class="flex items-center gap-4 sm:gap-6 mb-10 lg:mb-12">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-family font-bold text-primary-black">
+          Our Events
+        </h2>
+        <div class="flex-1 h-px bg-gray-300"></div>
       </div>
 
-      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <img src="./assets/homebageicon/readandNews/1.webp" class="rounded-lg w-full">
-          <p class="mt-4 text-black text-[20px] font-family mb-2">Don’t destroy greenery and don’t spoil scenery</p>
-          <p class="text-secondary-text text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim</p>
-        </div>
-        <div class="flex flex-col ">
-          <img src="./assets/homebageicon/readandNews/2.webp" class="rounded-lg w-full">
-          <p class="mt-4 text-black text-[20px] font-family mb-2">Is climate change happening faster than expected?</p>
-          <p class="text-secondary-text text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim</p>
-        </div>
-        <div class="flex flex-col ">
-          <img src="./assets/homebageicon/readandNews/3.webp" class="rounded-lg w-full">
-          <p class="mt-4 text-black text-[20px] font-family mb-2">Top 10 facts about wind farms you didn't know</p>
-          <p class="text-secondary-text text-[16px]"">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-</div>
-<div class=" flex flex-col ">
-<img src=" ./assets/homebageicon/readandNews/4.webp" class="rounded-lg w-full">
-          <p class="mt-4 text-black text-[20px] font-family mb-2">Our goal is to make water available for everyone</p>
-          <p class="text-secondary-text text-[16px]"">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-</div>
-  </div>
-  
-  
-  
-  
-  
-  </div>
+      <div class="grid md:grid-cols-2 gap-6">
 
-</section>
-    <!--Our events-->
-   <section class=" py-16 lg:py-24 bg-white ">
-  <div class=" max-w-[1280px] mx-auto px-6">
-
-            <!-- Title -->
-          <div class="flex items-center gap-4 sm:gap-6 mb-10 lg:mb-12">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-black">
-              Our Events
-            </h2>
-            <div class="flex-1 h-px bg-gray-300"></div>
-          </div>
-
-          <!-- Events -->
-          <div class="grid md:grid-cols-2 gap-6">
-
-            <!-- Card -->
-            <div
-              class="bg-bg-green rounded-lg p-5 sm:p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-
-              <div class="flex items-center gap-4 sm:gap-6">
-
-                <!-- Date -->
-                <div class="text-center">
-                  <p class="text-3xl sm:text-4xl lg:text-5xl font-bold">23</p>
-                  <p class="text-xs sm:text-sm uppercase">Sep</p>
-                </div>
-
-                <!-- Text -->
-                <div>
-                  <p class="text-xs sm:text-sm uppercase tracking-widest">
-                    Next Events
-                  </p>
-                  <p class="text-lg sm:text-xl lg:text-2xl font-bold mt-1 sm:mt-2">
-                    Say no to plastic usage and
-                    save the planet
-                  </p>
-                </div>
-
-              </div>
-
-              <!-- Arrow -->
-              <img class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
-                src="./assets/homebageicon/readandNews/Arrow button.svg" />
-
+        <!-- Event 1 -->
+        <div class="bg-bg-green rounded-xl p-5 sm:p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div class="flex items-center gap-4 sm:gap-6">
+            <div class="text-center shrink-0">
+              <p class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-black">23</p>
+              <p class="text-xs sm:text-sm uppercase text-primary-black">Sep</p>
             </div>
 
-            <!-- Card 2 -->
-            <div
-              class="bg-bg-green rounded-lg p-5 sm:p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-
-              <div class="flex items-center gap-4 sm:gap-6">
-
-                <div class="text-center">
-                  <p class="text-3xl sm:text-4xl lg:text-5xl font-bold">25</p>
-                  <p class="text-xs sm:text-sm uppercase">Sep</p>
-                </div>
-
-                <div>
-                  <p class="text-xs sm:text-sm uppercase tracking-widest">
-                    Next Events
-                  </p>
-                  <p class="text-lg sm:text-xl lg:text-2xl font-bold mt-1 sm:mt-2">
-                    Weekly cleaning program
-                  </p>
-                </div>
-
-              </div>
-
-              <img class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
-                src="./assets/homebageicon/readandNews/Arrow button.svg" />
-
+            <div>
+              <p class="text-xs sm:text-sm uppercase tracking-[0.2em] text-primary-black">
+                Next Events
+              </p>
+              <p class="text-lg sm:text-xl lg:text-2xl font-family font-bold mt-2 text-primary-black">
+                Say no to plastic usage and save the planet
+              </p>
             </div>
-
           </div>
 
+          <img
+            class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+            src="./assets/homebageicon/readandNews/Arrow button.svg"
+            alt="arrow"
+          />
         </div>
+
+        <!-- Event 2 -->
+        <div class="bg-bg-green rounded-xl p-5 sm:p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div class="flex items-center gap-4 sm:gap-6">
+            <div class="text-center shrink-0">
+              <p class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-black">25</p>
+              <p class="text-xs sm:text-sm uppercase text-primary-black">Sep</p>
+            </div>
+
+            <div>
+              <p class="text-xs sm:text-sm uppercase tracking-[0.2em] text-primary-black">
+                Next Events
+              </p>
+              <p class="text-lg sm:text-xl lg:text-2xl font-family font-bold mt-2 text-primary-black">
+                Weekly cleaning program
+              </p>
+            </div>
+          </div>
+
+          <img
+            class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+            src="./assets/homebageicon/readandNews/Arrow button.svg"
+            alt="arrow"
+          />
+        </div>
+
+      </div>
+    </div>
   </section>
+
   <!-- Footer -->
-  <section class="bg-black text-white py-[101px]">
-    <div class="container mx-auto px-6 flex flex-col lg:flex-row">
+  <footer class="bg-black text-white py-20 lg:py-[101px]">
+    <div class="max-w-[1280px] mx-auto px-6 flex flex-col lg:flex-row lg:justify-between gap-14">
 
-      <!-- Left Side -->
-      <div class="flex flex-col lg:flex-row ">
-
-        <!-- Logo -->
-        <div class="text-white text-xl font-family  pl-0 xl:pl-[100px] ">
+      <!-- Left -->
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
+        <div class="text-white text-xl font-family">
           {Finsweet
         </div>
 
-        <!-- Links -->
-        <div class="flex  flex-col lg:flex-row  mt-3 lg:ml-[117px] gap-22">
-
-          <!-- Our team -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-10 lg:gap-16">
           <div>
             <h3 class="text-white font-family mb-6">Our team</h3>
-            <ul class="space-y-6 text-sm">
-              <li>About us</li>
-              <li>Team</li>
-              <li>What we do</li>
-              <li>Contact</li>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white transition">About us</a></li>
+              <li><a href="#" class="hover:text-white transition">Team</a></li>
+              <li><a href="#" class="hover:text-white transition">What we do</a></li>
+              <li><a href="#" class="hover:text-white transition">Contact</a></li>
             </ul>
           </div>
 
-          <!-- More -->
           <div>
             <h3 class="text-white font-family mb-6">More</h3>
-            <ul class="space-y-6 text-sm">
-              <li>Projects</li>
-              <li>Events</li>
-              <li>Donate</li>
-              <li>Blog</li>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white transition">Projects</a></li>
+              <li><a href="#" class="hover:text-white transition">Events</a></li>
+              <li><a href="#" class="hover:text-white transition">Donate</a></li>
+              <li><a href="#" class="hover:text-white transition">Blog</a></li>
             </ul>
           </div>
 
-          <!-- Connect -->
           <div>
             <h3 class="text-white font-family mb-6">Connect</h3>
-            <ul class="space-y-6 text-sm">
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>LinkedIn</li>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white transition">Facebook</a></li>
+              <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+              <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+              <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
             </ul>
           </div>
-
         </div>
       </div>
 
-      <!-- Subscribe -->
-      <div class="mt-12 lg:mt-0 lg:ml-[143px] max-w-[544px]">
-        <h2 class="text-white  text-[30px] lg:text-[40px]  font-family font-bold mb-8">
+      <!-- Right -->
+      <div class="max-w-[544px] w-full">
+        <h2 class="text-white text-[30px] lg:text-[40px] leading-[1.3] font-family font-bold mb-8">
           Subscribe to get latest updates
         </h2>
 
         <div class="flex flex-col sm:flex-row gap-3">
-          <input type="email" placeholder="Your email"
-            class="flex-1 px-4 py-3 bg-transparent border border-gray-600 rounded-md focus:outline-none" />
-
-          <button class="bg-white text-black px-6 py-3 rounded-md font-medium">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="flex-1 px-4 py-3 bg-transparent border border-gray-600 rounded-md focus:outline-none text-white placeholder:text-gray-400"
+          />
+          <button class="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-gray-200 transition">
             Subscribe
           </button>
         </div>
       </div>
 
     </div>
-  </section>
-</body>
+  </footer>
 
+</body>
 </html>
